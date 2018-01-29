@@ -42,6 +42,7 @@ public class Work
 
 
 
+
         logger.info("b.get4242 " + b.get4242());
     }
 
