@@ -3,7 +3,7 @@ package com.nam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static java.lang.Thread.sleep;
+import static java.lang.Thread.*;
 
 public class Main {
 
@@ -54,6 +54,10 @@ class MMM
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+
+                    Work wrk = new Work();
+
+                    wrk.DoId();
                 //} while (true);
             }
         });
