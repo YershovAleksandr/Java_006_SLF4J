@@ -26,6 +26,7 @@ public class Work
 
         logger.info("b.get42 " + b.get42());
 
+
         logger.info("b.get4242 " + b.get4242());
     }
 
