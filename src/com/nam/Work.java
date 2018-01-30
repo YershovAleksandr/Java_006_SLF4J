@@ -2,6 +2,7 @@ package com.nam;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import x42.x24.Foo;
 
 public class Work
 {
@@ -18,42 +19,10 @@ public class Work
 
     private void JustDoIt()
     {
-        A a = new A();
+        Foo a = new Foo();
 
-        B b = new B();
+        //a.Bar();
 
-        logger.info("a.get42 " + a.get42());
-
-        logger.info("b.get42 " + b.get42());
-
-        logger.info("b.get4242 " + b.get4242());
+        logger.info("Foo Bar " + a.Bar());
     }
 }
-
-
-
-
-
-
-
-
-
-
-class A
-{
-    int i;
-
-    int get42()
-    {
-        return 42;
-    }
-}
-
-class B extends A
-{
-    int get4242()
-    {
-        return 4200 + get42();
-    }
-}
-
